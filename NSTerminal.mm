@@ -27,14 +27,14 @@ using namespace std;
 {
     va_list args;
     va_start(args, format);
-    printf("%s\n",[[[NSString alloc] initWithFormat:format arguments:args] UTF8String]);
+    cout << [[[NSString alloc] initWithFormat:format arguments:args] UTF8String] << endl;
     va_end(args);
 }
 +(void)printStringWithoutNewlineWithFormat:(NSString *)format, ...
 {
     va_list args;
     va_start(args, format);
-    printf("%s",[[[NSString alloc] initWithFormat:format arguments:args] UTF8String]);
+    cout << [[[NSString alloc] initWithFormat:format arguments:args] UTF8String] << endl;
     va_end(args);
 }
 //----Input
