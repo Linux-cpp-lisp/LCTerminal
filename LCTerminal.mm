@@ -5,7 +5,7 @@
 //  Created by A on 7/5/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
-#import "NSTerminal.h"
+#import "LCTerminal.h"
 
 
 #include <iostream>
@@ -13,7 +13,7 @@
 #include <stdio.h>
 using namespace std;
 
-@implementation NSTerminal
+@implementation LCTerminal
 //----Output
 +(void)printString:(NSString *)str
 {
