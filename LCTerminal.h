@@ -7,7 +7,6 @@
 //
 //Objective-C imports
 #import <Foundation/Foundation.h>
-#import "LCInt.h"
 
 /*
  LCTerminal is a simple class that can be used to ease interaction with the terminal in Objective-C OSX console programs. Although Objective-C 
