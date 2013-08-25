@@ -1,21 +1,21 @@
 //
-//  NSTerminal.h
-//  NSTerminal
+//  LCTerminal.h
+//  LCTerminal
 //
 //  Created by A on 7/5/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 //Objective-C imports
 #import <Foundation/Foundation.h>
-#import "NSInt.h"
+#import "LCInt.h"
 
 /*
- NSTerminal is a simple class that can be used to ease interaction with the terminal in Objective-C OSX console programs. Although Objective-C 
- already has NSLog(), that is only useful for just that, logging. NSTerminal aims to provide a simple interface to the terminal, wrapping the 
+ LCTerminal is a simple class that can be used to ease interaction with the terminal in Objective-C OSX console programs. Although Objective-C 
+ already has NSLog(), that is only useful for just that, logging. LCTerminal aims to provide a simple interface to the terminal, wrapping the 
  C++ standard library I/O functions (cin,cout,cerr). Constructing an instance of NSTerminal is pointless, all methods are class.
  */
 
-@interface NSTerminal : NSObject
+@interface LCTerminal : NSObject
 //----Output
 //A sort of Objective-C printf. Uses NSString's stringWithFormat: method for formating.
 +(void)printStringWithFormat:(NSString*)format,...;
