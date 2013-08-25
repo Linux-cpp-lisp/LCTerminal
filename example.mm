@@ -24,10 +24,10 @@ int main(int argc, const char * argv[])
         [LCTerminal printString:blah];
         // insert code here...
         [LCTerminal printString:@"Hello, world"];
-        [LCTerminal printString:[NSTerminal readString]];
+        [LCTerminal printString:[LCTerminal readString]];
         [LCTerminal printStringWithFormat:@"Hello, %@", @"John"];
-        [LCTerminal printStringWithFormat:@"Your Number: %i", [NSTerminal readInt]];
-        [LCTerminal printStringWithFormat:@"Your Float: %f", [NSTerminal readFloat]];
+        [LCTerminal printStringWithFormat:@"Your Number: %i", [LCTerminal readInt]];
+        [LCTerminal printStringWithFormat:@"Your Float: %f", [LCTerminal readFloat]];
         blah = [LCTerminal readString];
         [LCTerminal printString:blah];
         [LCTerminal printStringWithFormat:@"Your String: %@", blah];
