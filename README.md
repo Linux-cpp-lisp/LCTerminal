@@ -8,10 +8,10 @@ Example
 ==
 ```
 [LCTerminal printString:@"Hello, world"];
-[LCTerminal printString:[NSTerminal readString]];
+[LCTerminal printString:[LCTerminal readString]];
 [LCTerminal printStringWithFormat:@"Hello, %@", @"John"];
-[LCTerminal printStringWithFormat:@"Your Number: %i", [NSTerminal readInt]];
-[LCTerminal printStringWithFormat:@"Your Float: %f", [NSTerminal readFloat]];
+[LCTerminal printStringWithFormat:@"Your Number: %i", [LCTerminal readInt]];
+[LCTerminal printStringWithFormat:@"Your Float: %f", [LCTerminal readFloat]];
 ```
 
 Documentation
