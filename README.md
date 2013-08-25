@@ -1,4 +1,4 @@
-NSTerminal
+LCTerminal
 ==
 
 A small class to interface the C++/C console IO functions into Objective-C for console apps.
@@ -7,16 +7,16 @@ Written in Objective-C++.
 Example
 ==
 ```
-[NSTerminal printString:@"Hello, world"];
-[NSTerminal printString:[NSTerminal readString]];
-[NSTerminal printStringWithFormat:@"Hello, %@", @"John"];
-[NSTerminal printStringWithFormat:@"Your Number: %i", [NSTerminal readInt]];
-[NSTerminal printStringWithFormat:@"Your Float: %f", [NSTerminal readFloat]];
+[LCTerminal printString:@"Hello, world"];
+[LCTerminal printString:[NSTerminal readString]];
+[LCTerminal printStringWithFormat:@"Hello, %@", @"John"];
+[LCTerminal printStringWithFormat:@"Your Number: %i", [NSTerminal readInt]];
+[LCTerminal printStringWithFormat:@"Your Float: %f", [NSTerminal readFloat]];
 ```
 
 Documentation
 ==
-Class NSTerminal
+Class LCTerminal
 --
 `+(void)printStringWithFormat:(NSString*)format,...;`
 
@@ -49,36 +49,6 @@ Inputs a string from the terminal.
 `+(NSURL*)readURL;`
 
 Inputs a URL from the terminal.
-
-Macros (NSInt.h)
---
-`NSInt(val)`
-
-Converts an int `val` to an `NSNumber`.
-
-`NSFloat(val)`
-
-Converts a float `val` to an `NSNumber`.
-
-`NSBool(val)`
-
-Converts a boolean `val` to an `NSNumber`.
-
-`NSStr(val)`
-
-Converts an ASCII C string `val` to a `NSString`.
-
-`CInt(val)`
-
-Converts an `NSNumber` `val` to an int.
-
-`CFloat(val)`
-
-Converts an `NSNumber` `val` to a float.
-
-`CBool(val)`
-
-Converts an `NSNumber` `val` to a boolean.
 
 Licence
 ==
