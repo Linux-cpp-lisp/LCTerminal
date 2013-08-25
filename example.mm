@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "../NSTerminal.h"
+#import "../LCTerminal.h"
 
 #include <iostream>
 #include <string>
@@ -21,16 +21,16 @@ int main(int argc, const char * argv[])
         std::getline(cin, s);
         cout<<s<<endl;
         NSString* blah = [NSString stringWithCString:s.c_str() encoding:NSASCIIStringEncoding];
-        [NSTerminal printString:blah];
+        [LCTerminal printString:blah];
         // insert code here...
-        [NSTerminal printString:@"Hello, world"];
-        [NSTerminal printString:[NSTerminal readString]];
-        [NSTerminal printStringWithFormat:@"Hello, %@", @"John"];
-        [NSTerminal printStringWithFormat:@"Your Number: %i", [NSTerminal readInt]];
-        [NSTerminal printStringWithFormat:@"Your Float: %f", [NSTerminal readFloat]];
-        blah = [NSTerminal readString];
-        [NSTerminal printString:blah];
-        [NSTerminal printStringWithFormat:@"Your String: %@", blah];
+        [LCTerminal printString:@"Hello, world"];
+        [LCTerminal printString:[NSTerminal readString]];
+        [LCTerminal printStringWithFormat:@"Hello, %@", @"John"];
+        [LCTerminal printStringWithFormat:@"Your Number: %i", [NSTerminal readInt]];
+        [LCTerminal printStringWithFormat:@"Your Float: %f", [NSTerminal readFloat]];
+        blah = [LCTerminal readString];
+        [LCTerminal printString:blah];
+        [LCTerminal printStringWithFormat:@"Your String: %@", blah];
         
     }
     return 0;
